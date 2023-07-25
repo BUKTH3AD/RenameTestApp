@@ -74,5 +74,5 @@ Steps:
 4.	Press enter
 
 Expected result:
-	Method name is “@Make3”, but call on 4th line is “Make3”
+	Method name is “@Make3”, but call on 4th line is “Make3” (is it a bug?).
 

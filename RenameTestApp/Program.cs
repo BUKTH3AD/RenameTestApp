@@ -1,4 +1,6 @@
-﻿TestApp test = new TestApp();
+﻿using System.Threading.Channels;
+
+TestApp test = new TestApp();
 
 test.Make1();
 test.Make2();
@@ -9,7 +11,10 @@ List<string> users = new List<string>();
 users.Add("Alex");
 users.Add("Bob");
 users.Add("Charlie");
-
+foreach (string user in users)
+{
+    Console.WriteLine(user);
+}
 class TestApp : ITestApp
 {
     public void Make1()

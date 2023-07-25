@@ -1,0 +1,15 @@
+Test case 1
+Steps:
+1. Place breakpoint on 12th line
+2. Run solution in Debug mode
+3. Type in "Threats & Variables"
+    users.Add("Tom")
+    users.Add("Jane")
+4. Resume program
+
+Expected result:
+    At step 3
+        Count of users increased to 3
+        List users contain added items
+    After program finished
+        List of 5 Names occurred, Tom and Jane added after ALex
