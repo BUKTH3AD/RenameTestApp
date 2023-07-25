@@ -10,7 +10,6 @@ Expected result:
 	All Method implementations without parameters have been changed including implemented from the interface ITestApp
 
 Test case 2
-
 Steps:
 1.	Place cursor at 3th line on method Make1
 2.	Press cmd/ctrl+R,R

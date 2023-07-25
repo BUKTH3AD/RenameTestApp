@@ -1,6 +1,4 @@
-﻿using System.Threading.Channels;
-
-TestApp test = new TestApp();
+﻿TestApp test = new TestApp();
 
 test.Make1();
 test.Make2();
