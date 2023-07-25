@@ -1,0 +1,79 @@
+Test case 1
+Steps:
+1.	Place cursor at 3th line on method Make1
+2.	Press cmd/ctrl+R,R
+3.	Choose “Rename this overload”
+4.	Type “Make11”
+5.	Press enter
+
+Expected result:
+	All Method implementations without parameters have been changed including implemented from the interface ITestApp
+
+Test case 2
+
+Steps:
+1.	Place cursor at 3th line on method Make1
+2.	Press cmd/ctrl+R,R
+3.	Choose “Rename all overloads”
+4.	Type “Make11”
+5.	Press enter
+
+Expected result:
+	All Method overloads of method Make1 have been changed including implemented from the interface ITestApp
+
+Test case 3
+Steps:
+1.	Place cursor at 4th line on method Make2
+2.	Press cmd/ctrl+R,R
+3.	Type any name according to the  following rules:
+
+•	The only allowed characters for identifiers are all alphanumeric characters([A-Z], [a-z], [0-9]), ‘_‘ (underscore). For example “geek@” is not a valid C# identifier as it contain ‘@’ – special character.
+•	Identifiers should not start with digits([0-9]). For example “123geeks” is not valid in the C# identifier.
+•	Identifiers should not contain white spaces.
+
+
+Expected result:
+	All method entries have been changed
+
+Test case 4
+Steps:
+1.	Place cursor at 4th line on method Make2
+2.	Press cmd/ctrl+R,R
+3.	Type “Make2”
+
+Expected result:
+	Renaming is not allowed
+
+Test case 5
+Steps:
+1.	Place cursor at 4th line on method Make2
+2.	Press cmd/ctrl+R,R
+3.	Type “Make1”
+4.	Press enter
+
+Expected result:
+	Window with refactoring conflict of already existing method Make1 occurred.
+After clicking next – method Make2 renamed to Make1, but 4th line code still contains Make2 call (is it a bug?).
+After clicking back – returned to change name window
+After clicking cancel – refactoring window closed.
+
+Test case 6
+Steps:
+1.	Place cursor at 4th line on method Make2
+2.	Press cmd/ctrl+R,R
+3.	Type “void”
+4.	Press enter
+
+Expected result:
+	Method name is “@void”
+
+Test case 7
+Steps:
+1.	Place cursor at 4th line on method Make2
+2.	Press cmd/ctrl+R,R
+3.	Type “@Make3”
+4.	Press enter
+
+Expected result:
+	Method name is “@Make3”, but call on 4th line is “Make3”
+
