@@ -13,3 +13,38 @@ Expected result:
         List users contain added items
     After program finished
         List of 5 Names occurred, Tom and Jane added after ALex
+        
+Test case 2
+Steps:
+1. Place breakpoint on 12th line
+2. Run solution in Debug mode
+3. Type in "Threats & Variables"
+    TestApp test1 = new TestApp();
+
+Expected result:
+    Synthetic variables section shows new TestApp instance test1
+    
+Test case 3
+Steps:
+1. Place breakpoint on 12th line
+2. Run solution in Debug mode
+3. Type in "Threats & Variables"
+    TestApp test1 = new TestApp();
+    test1.Make1(4, 6);
+
+Expected result:
+    10 showed in console
+    $result variable shows value 10
+    
+Test case 4
+Steps:
+1. Place breakpoint on 12th line
+2. Run solution in Debug mode
+3. Type in "Threats & Variables"
+    TestApp test1 = new TestApp();
+    test1.Make1(4, 6)
+
+Expected result:
+    without semicolon still
+    10 showed in console
+    $result variable shows value 10
