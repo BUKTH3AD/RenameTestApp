@@ -1,6 +1,6 @@
 Test case 1
 Steps:
-1. Place breakpoint on 12th line
+1. Place breakpoint on 11th line
 2. Run solution in Debug mode
 3. Type in "Threats & Variables"
     users.Add("Tom")
@@ -16,7 +16,7 @@ Expected result:
         
 Test case 2
 Steps:
-1. Place breakpoint on 12th line
+1. Place breakpoint on 11th line
 2. Run solution in Debug mode
 3. Type in "Threats & Variables"
     TestApp test1 = new TestApp();
@@ -26,7 +26,7 @@ Expected result:
     
 Test case 3
 Steps:
-1. Place breakpoint on 12th line
+1. Place breakpoint on 11th line
 2. Run solution in Debug mode
 3. Type in "Threats & Variables"
     TestApp test1 = new TestApp();
@@ -38,7 +38,7 @@ Expected result:
     
 Test case 4
 Steps:
-1. Place breakpoint on 12th line
+1. Place breakpoint on 11th line
 2. Run solution in Debug mode
 3. Type in "Threats & Variables"
     TestApp test1 = new TestApp();
@@ -48,3 +48,25 @@ Expected result:
     without semicolon still
     10 showed in console
     $result variable shows value 10
+    
+Test case 5
+Steps:
+1. Place breakpoint on 11th line
+2. Run solution in Debug mode
+3. Type in "Threats & Variables"
+     users.IndexOf("Charlie")
+
+Expected result:
+    -1 showed in console
+    $result variable shows value -1
+    
+Test case 6
+Steps:
+1. Place breakpoint on 11th line
+2. Run solution in Debug mode
+3. Type in "Threats & Variables"
+     users.IndexOf("Bob")
+
+Expected result:
+    1 showed in console
+    $result variable shows value 1
